@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+/** @var Lib\Core\Application $app */
+$app = require_once __DIR__ . '/bootstrap/app.php';
+
+$console = app()->make('console');
+
+$console->run();
